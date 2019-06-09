@@ -16,4 +16,10 @@ class Post(models.Model):
         self.save()
     def __str__(self):
         return self.title
-    # Create your models here.
+
+'''class DiveSite(models.Model):
+    	LOCATIONS = (
+    		(‘Carmel’),
+    		(‘Monterey),
+    	)
+    	location = models.Charfield(max_length=8, choices = LOCATIONS)'''
