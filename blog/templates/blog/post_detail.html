@@ -11,7 +11,9 @@
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
           <span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <h2>{{ post.dive_site }}</h2>
+        <p>{{ post.city_country|linebreaksbr }}</p>
+        <p>{{ post.difficulty_level|linebreaksbr }}</p>
+        <p>{{ post.description|linebreaksbr }}</p>
     </div>
 {% endblock %}

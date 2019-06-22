@@ -4,7 +4,7 @@ from django.utils import timezone
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    city_country = models.CharField(max_length=200)
+    city_country = models.CharField(max_length=200, default='')
     dive_site = models.CharField(max_length=200)
     difficulty_level = models.CharField(max_length=200)
     description = models.TextField()
@@ -17,4 +17,4 @@ class Post(models.Model):
         self.published_date = timezone.now()
         self.save()
     def __str__(self):
-        return self.cithy_country
+        return self.city_country
