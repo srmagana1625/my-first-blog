@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='post',
-            name='city_country',
+            name='city_state',
             field=models.CharField(default='', max_length=200),
         ),
         migrations.AddField(

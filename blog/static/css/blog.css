@@ -16,6 +16,13 @@ body {
     font-size: 36pt;
     text-decoration: underline;
 }
+
+.post_header {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: baseline;
+}
 .content {
     margin-left: 40px;
 }
@@ -23,6 +30,7 @@ h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 .date {
+    padding-left: 20px;
     color: #828282;
 }
 
